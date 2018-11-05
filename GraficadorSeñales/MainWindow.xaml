@@ -21,7 +21,6 @@
         <ScrollViewer x:Name="scrContenedor" HorizontalAlignment="Left" Height="246" Margin="51,202,0,0" VerticalAlignment="Top" Width="840" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden" Grid.RowSpan="2">
             <Grid>
                 <Polyline Stroke="CornflowerBlue" StrokeThickness="2" Name="plnGrafica"/>
-                <Polyline Stroke="DarkSalmon" StrokeThickness="2" Name="plnGraficaDos"/>
                 <Polyline Stroke="Black" StrokeThickness="0.5" Name="plnEjeX"/>
                 <Polyline Stroke="Black" StrokeThickness="0.5" Name="plnEjeY"/>
             </Grid>
@@ -47,29 +46,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="194,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"><Run Text="Truncar:"/><LineBreak/><Run/></TextBlock>
         <CheckBox x:Name="chTruncar"  HorizontalAlignment="Left" Margin="319,141,0,0" VerticalAlignment="Top"  Checked="chTruncar_Checked" Unchecked="chTruncar_Unchecked"/>
         <TextBlock HorizontalAlignment="Left" Margin="19,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" Height="21"><Run Text="Ti"/><Run Text="po de señal:"/><LineBreak/><Run/></TextBlock>
-        <StackPanel x:Name="panelConfiguracion_Segunda" HorizontalAlignment="Left" Height="163" Margin="365,74,0,0" VerticalAlignment="Top" Width="141"/>
-        <ComboBox x:Name="cbTipoSeñal_Segunda" SelectedIndex="0" HorizontalAlignment="Left" Margin="365,47,0,0" VerticalAlignment="Top" Width="141" SelectionChanged="cbTipoSeñal_Segunda_SelectionChanged">
-            <ComboBoxItem Content="Señal Senoidal"/>
-            <ComboBoxItem Content="Señal Rampa"/>
-            <ComboBoxItem Content="Señal Exponencial"/>
-            <ComboBoxItem Content="Señal Rectangular"/>
-        </ComboBox>
-        <TextBox x:Name="txtEscalaAmplitud_Segunda" HorizontalAlignment="Left" Height="23" Margin="540,40,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <TextBlock HorizontalAlignment="Left" Margin="540,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Escala Amplitud:"/>
-        <TextBox x:Name="txtDesplazarY_Segunda" HorizontalAlignment="Left" Height="23" Margin="540,92,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <CheckBox x:Name="chEscalaAmplitud_Segunda"  HorizontalAlignment="Left" Margin="665,46,0,0" VerticalAlignment="Top" Checked="chEscalaAmplitud_Checked" Unchecked="chEscalaAmplitud_Unchecked"/>
-        <CheckBox x:Name="chDesplazarY_Segunda"  HorizontalAlignment="Left" Margin="665,92,0,0" VerticalAlignment="Top"  Checked="chDesplazarY_Checked" Unchecked="chDesplazarY_Unchecked"/>
-        <TextBox x:Name="txtUmbral_Segunda" HorizontalAlignment="Left" Height="23" Margin="540,141,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
-        <CheckBox x:Name="chTruncar_Segunda"  HorizontalAlignment="Left" Margin="665,141,0,0" VerticalAlignment="Top"  Checked="chTruncar_Checked" Unchecked="chTruncar_Unchecked"/>
-        <TextBlock HorizontalAlignment="Left" Margin="365,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" Height="21"><Run Text="Ti"/><Run Text="po de señal:"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="540,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Deszplazar Y:"/>
-        <TextBlock HorizontalAlignment="Left" Margin="540,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"><Run Text="Truncar:"/><LineBreak/><Run/></TextBlock>
-        <ComboBox x:Name="cbTipoOperacion" SelectedIndex="0" HorizontalAlignment="Left" Margin="894,95,0,0" VerticalAlignment="Top" Width="140">
-            <ComboBoxItem>Suma</ComboBoxItem>
-            <ComboBoxItem>Multiplicación</ComboBoxItem>
-            <ComboBoxItem>Convolución</ComboBoxItem>
-        </ComboBox>
-        <TextBlock HorizontalAlignment="Left" Margin="894,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" Height="21"><Run Text="Ti"/><Run Text="po de "/><Run Text="operación:"/><LineBreak/><Run/></TextBlock>
         <ScrollViewer x:Name="scrContenedor_Resultado" HorizontalAlignment="Left" Height="246" Margin="51,132,0,0" VerticalAlignment="Top" Width="840" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden" Grid.Row="1">
             <Grid>
                 <Polyline Stroke="CornflowerBlue" StrokeThickness="2" x:Name="plnGraficaResultado"/>
@@ -80,7 +56,7 @@
         <TextBlock x:Name="lblAmplitudMaximaY_Resultado" HorizontalAlignment="Left" Margin="19,155,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Grid.Row="1"/>
         <TextBlock x:Name="lblAmplitudMaximaNegativaY_Resultado" HorizontalAlignment="Left" Margin="19,316,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Grid.Row="1"/>
         <TextBlock x:Name="lblAmplitud0_Copy" HorizontalAlignment="Left" Margin="19,226,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Grid.Row="1"/>
-        <Button x:Name="btnRealizarOperacion" Content="Realizar Operacion " HorizontalAlignment="Left" Margin="894,137,0,0" VerticalAlignment="Top" Width="142" Click="btnRealizarOperacion_Click" />
+        <Button Content="Transformada de Fourier" HorizontalAlignment="Left" Margin="892,105,0,0" VerticalAlignment="Top" Width="142"/>
 
 
     </Grid>
